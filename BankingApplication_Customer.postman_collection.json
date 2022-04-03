@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "d04d1ab2-981c-4716-b081-9a99e7f60284",
+		"name": "BankingApplication_Customer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get_All_Customers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/customers/getCustomers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customers",
+						"getCustomers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create_Customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\":\"Jayan\",        \r\n    \"lastName\":\"Manu\",\r\n    \"email\": \"jayan@gmail.com\",\r\n    \"phone\": 7896895679,\r\n    \"age\":41,\r\n    \"address\":\"7/6, Vellore\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/customers/createCustomer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customers",
+						"createCustomer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete_Customer",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/customers/deleteCustomer/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customers",
+						"deleteCustomer",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update_Customer",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 3,\r\n    \"firstName\": \"ArunPrasad\",\r\n    \"lastName\": \"Subramanian\",\r\n    \"email\": \"Arun@gmail.com\",\r\n    \"phone\": 9628894479,\r\n    \"age\": 27,\r\n    \"address\": \"9/6, Vellore\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/customers/updateCustomer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customers",
+						"updateCustomer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_Customer_By_ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/customers/getCustomer/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customers",
+						"getCustomer",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
